@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Profile } from '../constants/data';
+import { Profile, Link } from '../constants/data';
 import '../styles/modalProfile.css';
 
 interface ModalProfile {
@@ -27,13 +27,19 @@ export const ModalProfile:React.FC<ModalProfile> = ({bio, isExpanded}) => {
             <h2>About</h2>
             <p>{bio.intro}</p>
             <h2>Experience</h2>
-            <p>{bio.experience}</p>
+            {bio.experience.map((experience, index) => (
+                <ul key={index}> {experience} </ul>
+            ))}
             <h2>Skills</h2>
-            <p>{bio.skills}</p>
+            {bio.skills.map((skill, index) => (
+                <ul key={index}> {skill} </ul>
+            ))}
             <h2>Education</h2>
             <p>{bio.education}</p>
             <h2>Links</h2>
-            <p>{bio.links}</p>
+            {bio.links.map((link, index) => (
+                <Link key={index} icon={link.icon} url={link.url}/>
+            ))}
         </div>
     )
 }
