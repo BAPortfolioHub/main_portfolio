@@ -25,9 +25,9 @@ export const brandonProfile:Profile = {
 }
 
 export const davidProfile:Profile = {
-    intro: "Hi. I like to eat, eat, eat eeples and benenees",
-    experience: "1 year. Hogwarts school of witchcraft and wizardry",
-    skills: "Backflips. Miming. Check forgery.",
-    education: "OSU 2021-2023. GPA 6.0",
-    links: "www.amazon.com",
+    intro: "Buisness Ops --> SWE",
+    experience: "SWE Intern @ Optum (UnitedHealth Group) | 8 Years in Business Ops, Analytics, and Process Efficiency",
+    skills: "Full-Stack Development | Python | Agile Practices | Leadership | Communication",
+    education: "Oregon State University: BS - Computer Science, Graduation 2023",
+    links: "https://www.linkedin.com/in/david-claphan",
 }
